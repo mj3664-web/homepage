@@ -126,6 +126,7 @@ h3 {
   grid-template-areas:
     "profile overview news"
     "profile publications news"
+    "profile projects news"
     "profile reviewer news";
   column-gap: 28px;
   row-gap: 24px;
@@ -150,6 +151,7 @@ h3 {
 .profile-inner,
 .overview,
 #publications,
+#projects,
 #patents,
 #news {
   border: 1px solid var(--line);
@@ -264,8 +266,39 @@ h3 {
   grid-area: publications;
 }
 
+#projects {
+  grid-area: projects;
+}
+
 #patents {
   grid-area: reviewer;
+}
+
+.project + .project {
+  margin-top: 18px;
+  padding-top: 18px;
+  border-top: 1px solid var(--line);
+}
+
+.project h3 {
+  margin-bottom: 4px;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.project-meta {
+  margin-bottom: 8px;
+  color: #675975;
+  font-size: 13px;
+  line-height: 1.65;
+}
+
+.project-list {
+  margin: 0;
+  padding-left: 18px;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.65;
 }
 
 .section {
@@ -580,6 +613,7 @@ h3 {
       "profile overview"
       "profile news"
       "profile publications"
+      "profile projects"
       "profile reviewer";
     column-gap: 24px;
     width: calc(100% - 48px);
@@ -599,7 +633,7 @@ h3 {
 @media (max-width: 799px) {
   .home-layout {
     grid-template-columns: minmax(0, 1fr);
-    grid-template-areas: "profile" "overview" "news" "publications" "reviewer";
+    grid-template-areas: "profile" "overview" "news" "publications" "projects" "reviewer";
     width: min(640px, calc(100% - 32px));
     margin-top: 24px;
   }
@@ -743,6 +777,7 @@ h3 {
   .profile-inner,
   .overview,
   #publications,
+  #projects,
   #patents,
   #news {
     border: 0;

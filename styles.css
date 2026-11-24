@@ -150,7 +150,7 @@ h3 {
 .profile-inner,
 .overview,
 #publications,
-#reviewer,
+#patents,
 #news {
   border: 1px solid var(--line);
   border-radius: var(--frame-radius);
@@ -264,7 +264,7 @@ h3 {
   grid-area: publications;
 }
 
-#reviewer {
+#patents {
   grid-area: reviewer;
 }
 
@@ -743,7 +743,7 @@ h3 {
   .profile-inner,
   .overview,
   #publications,
-  #reviewer,
+  #patents,
   #news {
     border: 0;
     border-radius: 0;

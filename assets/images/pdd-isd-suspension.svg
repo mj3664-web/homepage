@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="480" viewBox="0 0 720 480" role="img" aria-labelledby="title">
+  <title id="title">Illustrative quarter-car suspension with inerter, spring, and damper</title>
+  <rect width="720" height="480" fill="white"/>
+  <g stroke-width="3">
+    <rect x="200" y="50" width="320" height="70" rx="8" fill="#eef4f6" stroke="#326879"/>
+    <rect x="260" y="290" width="200" height="60" rx="8" fill="#eef4f6" stroke="#326879"/>
+  </g>
+  <g fill="none" stroke="#667781" stroke-width="3">
+    <path d="M280 120V150L262 162L298 178L262 194L298 210L262 226L298 242L280 254V290"/>
+    <path d="M360 120V170M340 170H380V230H340M360 230V290M345 190V220"/>
+    <path d="M440 120V160M420 160H460M420 180H460M440 180V215"/>
+    <path d="M440 215V290" stroke="#8553a4" stroke-dasharray="6 6"/>
+    <path d="M360 350V380L344 390L376 402L344 414L360 424V440M220 440H500"/>
+  </g>
+  <rect x="418" y="210" width="44" height="34" rx="6" fill="#f4eef8" stroke="#8553a4" stroke-width="3"/>
+  <g font-family="Arial,sans-serif" font-size="21" fill="#2c3a44" text-anchor="middle">
+    <text x="360" y="93">Sprung mass</text><text x="360" y="327">Unsprung mass</text>
+    <text x="230" y="210" fill="#526471">k</text><text x="400" y="207" fill="#526471">c</text><text x="500" y="175" fill="#526471">b</text>
+    <text x="555" y="233" fill="#8553a4">PDD</text>
+  </g>
+</svg>

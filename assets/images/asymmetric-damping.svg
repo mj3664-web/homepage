@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="480" viewBox="0 0 720 480" role="img" aria-labelledby="title">
+  <title id="title">Illustrative asymmetric damping force-velocity curve, not experimental data</title>
+  <rect width="720" height="480" fill="white"/>
+  <g stroke="#e2e8ee" stroke-width="2"><path d="M110 150H644M110 350H644M230 86V388M510 86V388"/></g>
+  <path d="M110 250H650M370 86V400" fill="none" stroke="#667781" stroke-width="3"/>
+  <path d="M370 250L630 110" fill="none" stroke="#326879" stroke-width="5"/>
+  <path d="M370 250L120 330" fill="none" stroke="#8553a4" stroke-width="5"/>
+  <path d="M120 400L620 100" fill="none" stroke="#9aa8b1" stroke-width="3" stroke-dasharray="10 8"/>
+  <g font-family="Arial,sans-serif" font-size="22" fill="#526471"><text x="330" y="445">Velocity</text><text transform="translate(80 290) rotate(-90)">Force</text><text x="470" y="96" fill="#326879">Rebound</text><text x="130" y="300" fill="#8553a4">Compression</text><text x="520" y="230" fill="#9aa8b1" font-size="19">symmetric</text></g>
+</svg>

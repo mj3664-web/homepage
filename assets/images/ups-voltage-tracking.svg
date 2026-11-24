@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="480" viewBox="0 0 720 480" role="img" aria-labelledby="title">
+  <title id="title">Illustrative sinusoidal voltage reference and sampled-data tracking, not experimental data</title>
+  <rect width="720" height="480" fill="white"/>
+  <g stroke="#e2e8ee" stroke-width="2"><path d="M110 150H644M110 250H644M110 350H644"/></g>
+  <path d="M110 86V388H650" fill="none" stroke="#667781" stroke-width="3"/>
+  <path d="M110 250C150 130 200 130 240 250S330 370 370 250S460 130 500 250S590 370 630 250" fill="none" stroke="#8553a4" stroke-width="5" stroke-dasharray="12 8"/>
+  <path d="M110 250H136V190H162V152H188V146H214V182H240V240H266V300H292V342H318V350H344V316H370V258H396V198H422V156H448V146H474V178H500V236H526V296H552V340H578V352H604V320H630" fill="none" stroke="#326879" stroke-width="4"/>
+  <g font-family="Arial,sans-serif" font-size="23" fill="#526471"><text x="341" y="439">Time</text><text transform="translate(68 300) rotate(-90)">Voltage</text><text x="150" y="54" fill="#8553a4">Reference</text><text x="400" y="54" fill="#326879">Sampled output</text></g>
+</svg>

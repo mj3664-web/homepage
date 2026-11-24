@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="480" viewBox="0 0 720 480" role="img" aria-labelledby="title">
+  <title id="title">Illustrative sampled-data control loop with delays and a sequential predictor</title>
+  <rect width="720" height="480" fill="white"/>
+  <defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10Z" fill="#667781"/></marker></defs>
+  <g fill="none" stroke="#667781" stroke-width="3" marker-end="url(#a)">
+    <path d="M206 150H290"/><path d="M450 150H600V330H470"/><path d="M290 330H120V150H140"/>
+  </g>
+  <g stroke-width="3">
+    <rect x="290" y="105" width="160" height="90" rx="10" fill="#eef4f6" stroke="#326879"/>
+    <rect x="290" y="285" width="180" height="90" rx="10" fill="#f4eef8" stroke="#8553a4"/>
+    <rect x="140" y="120" width="66" height="60" rx="8" fill="white" stroke="#667781"/>
+  </g>
+  <g font-family="Arial,sans-serif" font-size="23" text-anchor="middle" fill="#2c3a44">
+    <text x="370" y="145">Plant</text><text x="370" y="172" font-size="18" fill="#526471">state delay</text>
+    <text x="380" y="325">Sequential</text><text x="380" y="352">predictors</text>
+    <text x="173" y="158">ZOH</text>
+    <text x="620" y="245" font-size="19" fill="#526471" text-anchor="start">y(t)</text>
+  </g>
+  <g fill="#8553a4"><circle cx="535" cy="330" r="7"/><circle cx="560" cy="330" r="7"/><circle cx="585" cy="330" r="7"/></g>
+  <text x="360" y="438" font-family="Arial,sans-serif" font-size="20" fill="#526471" text-anchor="middle">Aperiodic sampling · transmission delay</text>
+</svg>

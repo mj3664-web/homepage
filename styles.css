@@ -293,6 +293,25 @@ h3 {
   line-height: 1.65;
 }
 
+.project-media {
+  margin: 16px 0 0;
+}
+
+.project-media video {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: #000;
+}
+
+.project-media figcaption {
+  margin-top: 6px;
+  color: var(--muted);
+  font-size: 12px;
+}
+
 .project-list {
   margin: 0;
   padding-left: 18px;

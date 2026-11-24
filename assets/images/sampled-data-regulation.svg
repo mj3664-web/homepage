@@ -1,21 +1,55 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="720" height="480" viewBox="0 0 720 480" role="img" aria-labelledby="title">
-  <title id="title">Illustrative sampled-data control loop with delays and a sequential predictor</title>
+  <title id="title">Block diagram of the sampled-data output regulation scheme: time-delay plant, exosystem, aperiodic sampler, observer, sequential predictors, and delayed controller</title>
   <rect width="720" height="480" fill="white"/>
   <defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10Z" fill="#667781"/></marker></defs>
-  <g fill="none" stroke="#667781" stroke-width="3" marker-end="url(#a)">
-    <path d="M206 150H290"/><path d="M450 150H600V330H470"/><path d="M290 330H120V150H140"/>
+  <g fill="none" stroke="#667781" stroke-width="2.5" marker-end="url(#a)">
+    <path d="M390 82V138"/>
+    <path d="M200 188H246"/>
+    <path d="M534 162H704"/>
+    <path d="M534 208H640V262"/>
+    <path d="M640 302V330"/>
+    <path d="M566 365H528"/>
+    <path d="M236 365H204"/>
+    <path d="M116 330V216"/>
   </g>
-  <g stroke-width="3">
-    <rect x="290" y="105" width="160" height="90" rx="10" fill="#eef4f6" stroke="#326879"/>
-    <rect x="290" y="285" width="180" height="90" rx="10" fill="#f4eef8" stroke="#8553a4"/>
-    <rect x="140" y="120" width="66" height="60" rx="8" fill="white" stroke="#667781"/>
+  <g stroke-width="2.5">
+    <rect x="300" y="28" width="180" height="54" rx="8" fill="#f7f9fa" stroke="#667781"/>
+    <rect x="250" y="138" width="284" height="96" rx="10" fill="#eef4f6" stroke="#326879"/>
+    <rect x="32" y="160" width="168" height="56" rx="8" fill="#f7f9fa" stroke="#667781"/>
+    <rect x="566" y="330" width="138" height="70" rx="8" fill="#eef4f6" stroke="#326879"/>
+    <rect x="236" y="318" width="292" height="94" rx="10" fill="#f4eef8" stroke="#8553a4"/>
+    <rect x="32" y="330" width="172" height="70" rx="8" fill="#eef4f6" stroke="#326879"/>
   </g>
-  <g font-family="Arial,sans-serif" font-size="23" text-anchor="middle" fill="#2c3a44">
-    <text x="370" y="145">Plant</text><text x="370" y="172" font-size="18" fill="#526471">state delay</text>
-    <text x="380" y="325">Sequential</text><text x="380" y="352">predictors</text>
-    <text x="173" y="158">ZOH</text>
-    <text x="620" y="245" font-size="19" fill="#526471" text-anchor="start">y(t)</text>
+  <g fill="white" stroke="#8553a4" stroke-width="2">
+    <rect x="252" y="350" width="76" height="44" rx="6"/><rect x="436" y="350" width="76" height="44" rx="6"/>
   </g>
-  <g fill="#8553a4"><circle cx="535" cy="330" r="7"/><circle cx="560" cy="330" r="7"/><circle cx="585" cy="330" r="7"/></g>
-  <text x="360" y="438" font-family="Arial,sans-serif" font-size="20" fill="#526471" text-anchor="middle">Aperiodic sampling · transmission delay</text>
+  <g fill="none" stroke="#8553a4" stroke-width="2" marker-end="url(#a)"><path d="M434 372H400"/><path d="M364 372H330"/></g>
+  <path d="M628 262L652 296" stroke="#2c3a44" stroke-width="3"/><circle cx="640" cy="262" r="4" fill="#2c3a44"/><circle cx="640" cy="302" r="4" fill="#2c3a44"/>
+  <g font-family="Arial,sans-serif" fill="#2c3a44" text-anchor="middle">
+    <text x="390" y="52" font-size="19" font-weight="bold">Exosystem</text>
+    <text x="390" y="73" font-size="16" fill="#526471" font-style="italic">v̇ = Sv</text>
+    <text x="390" y="170" font-size="20" font-weight="bold">Time-delay plant</text>
+    <text x="392" y="197" font-size="16" fill="#526471" font-style="italic">ẋ = Ax + A<tspan dy="4" font-size="11">d</tspan><tspan dy="-4">x(t−d) + Bu + Ev</tspan></text>
+    <text x="392" y="221" font-size="15" fill="#526471">state delay d</text>
+    <text x="116" y="185" font-size="17" font-weight="bold">Transmission</text>
+    <text x="116" y="206" font-size="15" fill="#526471">delay h + ZOH</text>
+    <text x="635" y="358" font-size="18" font-weight="bold">Observer</text>
+    <text x="635" y="384" font-size="17" fill="#526471" font-style="italic">ẑ(t)</text>
+    <text x="382" y="341" font-size="17" font-weight="bold" fill="#8553a4">Sequential predictors</text>
+    <text x="290" y="379" font-size="19">ϑ̂<tspan dy="5" font-size="12">1</tspan></text>
+    <text x="382" y="379" font-size="20" fill="#8553a4">⋯</text>
+    <text x="474" y="379" font-size="19">ϑ̂<tspan dy="5" font-size="12">N₁</tspan></text>
+    <text x="382" y="406" font-size="13" fill="#526471">spacing Δh, horizon N₁Δh ≥ h</text>
+    <text x="118" y="358" font-size="18" font-weight="bold">Controller</text>
+    <text x="118" y="384" font-size="15" fill="#526471" font-style="italic">u(t), t ∈ [t<tspan dy="4" font-size="11">k</tspan><tspan dy="-4">, t</tspan><tspan dy="4" font-size="11">k+1</tspan><tspan dy="-4">)</tspan></text>
+  </g>
+  <g font-family="Arial,sans-serif" font-size="16" fill="#526471" font-style="italic">
+    <text x="404" y="114">v(t)</text>
+    <text x="214" y="178">u</text>
+    <text x="664" y="152">e(t)</text>
+    <text x="548" y="200">y<tspan dy="4" font-size="11">m</tspan></text>
+    <text x="660" y="284" font-style="normal">t<tspan dy="4" font-size="11">k</tspan></text>
+    <text x="616" y="292" font-size="13" font-style="normal" text-anchor="end">T<tspan dy="3" font-size="10">k</tspan><tspan dy="-3"> ∈ [h̲, h̄]</tspan></text>
+  </g>
+  <text x="360" y="456" font-family="Arial,sans-serif" font-size="16" fill="#526471" text-anchor="middle">Aperiodic sampled-data output feedback with sequential predictors</text>
 </svg>

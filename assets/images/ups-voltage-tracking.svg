@@ -1,9 +1,70 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="720" height="480" viewBox="0 0 720 480" role="img" aria-labelledby="title">
-  <title id="title">Illustrative sinusoidal voltage reference and sampled-data tracking, not experimental data</title>
+  <title id="title">Single-phase voltage-source UPS inverter with LC filter, controlled by a predictor-based aperiodic sampled-data output feedback loop with transmission delay</title>
   <rect width="720" height="480" fill="white"/>
-  <g stroke="#e2e8ee" stroke-width="2"><path d="M110 150H644M110 250H644M110 350H644"/></g>
-  <path d="M110 86V388H650" fill="none" stroke="#667781" stroke-width="3"/>
-  <path d="M110 250C150 130 200 130 240 250S330 370 370 250S460 130 500 250S590 370 630 250" fill="none" stroke="#8553a4" stroke-width="5" stroke-dasharray="12 8"/>
-  <path d="M110 250H136V190H162V152H188V146H214V182H240V240H266V300H292V342H318V350H344V316H370V258H396V198H422V156H448V146H474V178H500V236H526V296H552V340H578V352H604V320H630" fill="none" stroke="#326879" stroke-width="4"/>
-  <g font-family="Arial,sans-serif" font-size="23" fill="#526471"><text x="341" y="439">Time</text><text transform="translate(68 300) rotate(-90)">Voltage</text><text x="150" y="54" fill="#8553a4">Reference</text><text x="400" y="54" fill="#326879">Sampled output</text></g>
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10Z" fill="#667781"/></marker>
+    <marker id="g" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10Z" fill="#3a9a5b"/></marker>
+  </defs>
+  <!-- power circuit -->
+  <g fill="none" stroke="#2c3a44" stroke-width="2.5">
+    <path d="M50 80H130V96M50 200H130V184M50 80V128M50 152V200"/>
+    <path d="M220 112H240L246 102L256 122L266 102L276 122L282 112H296"/>
+    <path d="M296 112a9 9 0 0 1 18 0a9 9 0 0 1 18 0a9 9 0 0 1 18 0a9 9 0 0 1 18 0H560V122"/>
+    <path d="M220 172H560V162"/>
+    <path d="M440 112V139M440 151V172"/>
+  </g>
+  <g stroke="#2c3a44" stroke-width="3"><path d="M34 128H66M42 152H58"/><path d="M424 139H456M424 151H456"/></g>
+  <circle cx="440" cy="112" r="4" fill="#2c3a44"/><circle cx="440" cy="172" r="4" fill="#2c3a44"/>
+  <rect x="100" y="96" width="120" height="88" rx="8" fill="#eef4f6" stroke="#326879" stroke-width="2.5"/>
+  <rect x="530" y="122" width="60" height="40" rx="5" fill="#fbe3cf" stroke="#c0835a" stroke-width="2"/>
+  <g fill="none" stroke="#3a9a5b" stroke-width="2.5" marker-end="url(#g)"><path d="M372 100H404"/><path d="M482 100H514"/><path d="M472 126V160"/></g>
+  <g font-family="Arial,sans-serif" fill="#2c3a44" text-anchor="middle">
+    <text x="160" y="134" font-size="17" font-weight="bold">Full-bridge</text>
+    <text x="160" y="156" font-size="15" fill="#526471">S₁–S₄</text>
+    <text x="560" y="147" font-size="15">Load</text>
+    <text x="28" y="146" font-size="16" font-style="italic">V<tspan dy="4" font-size="11">s</tspan></text>
+    <text x="261" y="96" font-size="15" font-style="italic">r</text>
+    <text x="332" y="96" font-size="15" font-style="italic">L</text>
+    <text x="418" y="166" font-size="15" font-style="italic">C</text>
+    <text x="388" y="82" font-size="14" fill="#3a9a5b" font-style="italic">i<tspan dy="4" font-size="10">L</tspan></text>
+    <text x="498" y="82" font-size="14" fill="#3a9a5b" font-style="italic">i<tspan dy="4" font-size="10">o</tspan></text>
+    <text x="492" y="148" font-size="14" fill="#3a9a5b" font-style="italic">v<tspan dy="4" font-size="10">o</tspan></text>
+    <text x="236" y="148" font-size="15" font-style="italic" fill="#c0392b">u(t)</text>
+  </g>
+  <!-- measurement and control loop -->
+  <g fill="none" stroke="#667781" stroke-width="2.5" marker-end="url(#a)">
+    <path d="M440 112V52H660V258" stroke-dasharray="7 5"/>
+    <path d="M660 298V322"/>
+    <path d="M588 360H546"/>
+    <path d="M290 360H246"/>
+    <path d="M150 330V268"/>
+    <path d="M150 228V187" stroke="#c0392b"/>
+  </g>
+  <path d="M648 258L672 292" stroke="#2c3a44" stroke-width="3"/><circle cx="660" cy="258" r="4" fill="#2c3a44"/><circle cx="660" cy="298" r="4" fill="#2c3a44"/>
+  <g stroke-width="2.5">
+    <rect x="80" y="228" width="140" height="40" rx="8" fill="#f7f9fa" stroke="#667781"/>
+    <rect x="588" y="322" width="122" height="76" rx="8" fill="#eef4f6" stroke="#326879"/>
+    <rect x="290" y="312" width="256" height="96" rx="10" fill="#f4eef8" stroke="#8553a4"/>
+    <rect x="40" y="330" width="206" height="62" rx="8" fill="#eef4f6" stroke="#326879"/>
+  </g>
+  <g fill="white" stroke="#8553a4" stroke-width="2"><rect x="304" y="344" width="72" height="42" rx="6"/><rect x="460" y="344" width="72" height="42" rx="6"/></g>
+  <g fill="none" stroke="#8553a4" stroke-width="2" marker-end="url(#a)"><path d="M458 365H436"/><path d="M400 365H378"/></g>
+  <g font-family="Arial,sans-serif" fill="#2c3a44" text-anchor="middle">
+    <text x="150" y="253" font-size="15" fill="#526471">delay h + ZOH</text>
+    <text x="649" y="352" font-size="17" font-weight="bold">Observer</text>
+    <text x="649" y="378" font-size="16" fill="#526471" font-style="italic">ẑ(t)</text>
+    <text x="418" y="334" font-size="16" font-weight="bold" fill="#8553a4">Sequential predictors</text>
+    <text x="340" y="372" font-size="19">φ̂<tspan dy="5" font-size="12">1</tspan></text>
+    <text x="418" y="372" font-size="20" fill="#8553a4">⋯</text>
+    <text x="496" y="372" font-size="19">φ̂<tspan dy="5" font-size="12">N₁</tspan></text>
+    <text x="418" y="402" font-size="13" fill="#526471">spacing Δh</text>
+    <text x="143" y="355" font-size="17" font-weight="bold">Controller</text>
+    <text x="143" y="380" font-size="15" fill="#526471" font-style="italic">u = K<tspan dy="4" font-size="11">z</tspan><tspan dy="-4">φ̂</tspan><tspan dy="4" font-size="11">1</tspan><tspan dy="-4">(t</tspan><tspan dy="4" font-size="11">k</tspan><tspan dy="-4"> − h)</tspan></text>
+  </g>
+  <g font-family="Arial,sans-serif" font-size="15" fill="#526471">
+    <text x="548" y="44" font-style="italic">y<tspan dy="4" font-size="11">m</tspan><tspan dy="-4"> = v</tspan><tspan dy="4" font-size="11">o</tspan></text>
+    <text x="684" y="282">t<tspan dy="4" font-size="11">k</tspan></text>
+    <text x="636" y="284" font-size="13" text-anchor="end">T<tspan dy="3" font-size="10">k</tspan><tspan dy="-3"> ∈ [h̲, h̄]</tspan></text>
+  </g>
+  <text x="360" y="448" font-family="Arial,sans-serif" font-size="16" fill="#526471" text-anchor="middle">Track v<tspan dy="4" font-size="11">r</tspan><tspan dy="-4">(t) = V</tspan><tspan dy="4" font-size="11">r</tspan><tspan dy="-4"> sin(γt + λ</tspan><tspan dy="4" font-size="11">v</tspan><tspan dy="-4">) under aperiodic sampling and input delay</tspan></text>
 </svg>

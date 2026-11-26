@@ -176,6 +176,40 @@
             </figure>
           </div>
         </article>
+        <article class="project">
+          <h3>Quadrotor Looping with SQP and MPC</h3>
+          <p class="project-meta">ROB-GY 6323 Reinforcement Learning and Optimal Control &middot; New York University &middot; Instructor: Prof. Ludovic Righetti &middot; <time datetime="2025">Fall 2025</time></p>
+          <ul class="project-list">
+            <li>Discretized the planar quadrotor dynamics and designed a heart-shaped reference that requires a full 360&deg; rotation (a flip).</li>
+            <li>Implemented an SQP solver with a filter line search to optimize trajectories under thrust limits.</li>
+            <li>Used the solver as an MPC controller and tested it in simulation with external disturbances.</li>
+          </ul>
+          <p class="publication-links"><a href="https://github.com/mj3664-web/ROB-6323-Reinforcement-learning-and-optimal-control-SQP-MPC">Code</a> <a href="https://github.com/mj3664-web/ROB-6323-Reinforcement-learning-and-optimal-control-SQP-MPC/blob/main/Project1_RL.pdf">Report</a></p>
+          <div class="project-media-row project-media-row--compact">
+            <figure class="project-media" style="--ratio: 1.2805">
+              <a href="assets/images/quadrotor-mpc-run1.png" title="View full-resolution plot"><img src="assets/images/quadrotor-mpc-run1.png" alt="Target heart-shaped trajectory and actual quadrotor trajectory under MPC with disturbances, closely tracked" width="703" height="549" loading="lazy"></a>
+            </figure>
+            <figure class="project-media" style="--ratio: 1">
+              <video controls muted loop playsinline preload="metadata" poster="assets/images/quadrotor-mpc-run1-poster.jpg" width="850" height="850" aria-label="Animation of the quadrotor for run 1">
+                <source src="assets/videos/quadrotor-mpc-run1.mp4" type="video/mp4">
+                <a href="assets/videos/quadrotor-mpc-run1.mp4">Download the animation</a>
+              </video>
+            </figure>
+          </div>
+          <p class="project-caption">Run 1: MPC tracks the heart-shaped target, including the flip, under disturbances.</p>
+          <div class="project-media-row project-media-row--compact">
+            <figure class="project-media" style="--ratio: 1.2805">
+              <a href="assets/images/quadrotor-mpc-run2.png" title="View full-resolution plot"><img src="assets/images/quadrotor-mpc-run2.png" alt="Target heart-shaped trajectory and actual quadrotor trajectory under MPC with disturbances, cutting across the lower half" width="703" height="549" loading="lazy"></a>
+            </figure>
+            <figure class="project-media" style="--ratio: 1">
+              <video controls muted loop playsinline preload="metadata" poster="assets/images/quadrotor-mpc-run2-poster.jpg" width="850" height="850" aria-label="Animation of the quadrotor for run 2">
+                <source src="assets/videos/quadrotor-mpc-run2.mp4" type="video/mp4">
+                <a href="assets/videos/quadrotor-mpc-run2.mp4">Download the animation</a>
+              </video>
+            </figure>
+          </div>
+          <p class="project-caption">Run 2: under disturbances, the quadrotor cuts across the lower half of the heart.</p>
+        </article>
       </section>
 
       <section class="section" id="patents" aria-labelledby="patents-title">

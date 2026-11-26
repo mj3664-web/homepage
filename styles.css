@@ -311,6 +311,11 @@ h3 {
     flex-direction: column;
   }
 
+  .project-media-row--compact {
+    flex-direction: row;
+    gap: 8px;
+  }
+
   .project-media {
     width: 100%;
   }
@@ -323,6 +328,33 @@ h3 {
   border: 1px solid var(--line);
   border-radius: 12px;
   background: #000;
+}
+
+.project-media img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: #fff;
+}
+
+.project-media-row--compact {
+  max-width: 460px;
+}
+
+.project-media-row + .project-media-row {
+  margin-top: 12px;
+}
+
+.project-caption {
+  margin: 6px 0 0;
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.project .publication-links {
+  margin-top: 8px;
 }
 
 .project-media figcaption {
